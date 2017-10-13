@@ -1,0 +1,48 @@
+{
+  "name": "@thoughtbit/eslint-config",
+  "version": "1.0.0",
+  "description": "ThoughtBit config for ESLint",
+  "authors": [
+    "moocss <moocss@gmail.com> (https://github.com/moocss)"
+  ],
+  "license": "MIT",
+  "main": "base.js",
+  "files": [
+    "*.js",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thoughtbit/eslint-config.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "dependencies": {
+    "eslint-import-resolver-webpack": "^0.8.3",
+    "eslint-plugin-angular": "^3.0.0",
+    "eslint-plugin-bdd": "^2.1.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-vue": "^2.1.0"
+  },
+  "devDependencies": {
+    "ci-publish": "^1.3.0",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.0.0",
+    "standard-version": "^4.0.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=4.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "scripts": {
+    "commit": "git-cz",
+    "release:ci": "standard-version && git push --follow-tags origin master && ci-publish"
+  }
+}
