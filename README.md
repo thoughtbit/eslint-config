@@ -29,3 +29,8 @@ ThoughtBit config for ESLint
   ]
 }
 ```
+
+## 参考
+
+https://github.com/uedlinker/eslint-config-react
+https://github.com/uedlinker/eslint-config-base
